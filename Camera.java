@@ -1,5 +1,5 @@
 public interface Camera {
 
-  public int printDetails();
+  public String printDetails();
   
 }
