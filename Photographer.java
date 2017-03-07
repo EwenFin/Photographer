@@ -17,8 +17,8 @@ public class Photographer {
     return collection.size();
   }
 
-  public void addCamera(Camera camera){
-    collection.add(camera);
+  public void addCamera(Camera device){
+    collection.add(device);
   }
 
   public Camera removeCamera(){
@@ -28,4 +28,10 @@ public class Photographer {
     return null;
   }
 
+  public String printAllDetails(){
+    for(Camera device : collection){
+      String details = (device.printDetails()) + "' ";  
+    }
+    return details;
+  } 
 }

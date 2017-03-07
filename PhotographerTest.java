@@ -40,7 +40,11 @@ public class PhotographerTest{
 
   @Test
   public void printOutCollection(){
+    photographer.addCamera(camera);
+    photographer.addCamera(camera2);
+    assertEquals(0 ,photographer.printAllDetails());
+    }
 
-  }
+  
 
 }
