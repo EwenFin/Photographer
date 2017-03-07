@@ -42,7 +42,7 @@ public class PhotographerTest{
   public void printOutCollection(){
     photographer.addCamera(camera);
     photographer.addCamera(camera2);
-    assertEquals(0 ,photographer.printAllDetails());
+    assertEquals( " Here are some digital specs. Here are some analogue specs. ",photographer.printAllDetails());
     }
 
   

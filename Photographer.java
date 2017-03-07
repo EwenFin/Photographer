@@ -29,8 +29,9 @@ public class Photographer {
   }
 
   public String printAllDetails(){
+    String details = " ";
     for(Camera device : collection){
-      String details = (device.printDetails()) + "' ";  
+      details = details + device.printDetails() + ". ";
     }
     return details;
   } 
